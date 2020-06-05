@@ -7,7 +7,7 @@ $(document).ready(function(){
   };
 
   function updatePlacedOrder(){
-    $('#your-total').text("Your order was placed successfully! Total cost: " + order.total);
+    $('#your-total').text("Your order was placed successfully! Total cost: " + order.total+"."+" Bon Appetit!");
   };
 
   $('#pizza').click(function(){
@@ -40,11 +40,6 @@ $(document).ready(function(){
     order.place();
     updatePlacedOrder();
     $('#your-total').show();
-  })
-
-
-
-
-
-
+  });
+  
 });
